@@ -4,7 +4,7 @@ pipeline {
 
     tools {
         maven "MAVEN3"
-        jdk "OracleJDK17"
+        jdk "OracleJDK8"
     }
 
     environment {
@@ -17,7 +17,6 @@ pipeline {
         NEXUSPORT = '8081'
         NEXUS_GRP_REPO = 'vpro-maven-group'
         NEXUS_LOGIN = 'nexus-login'
-
     }
 
     stages {
