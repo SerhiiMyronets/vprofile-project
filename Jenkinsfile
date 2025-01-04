@@ -35,17 +35,13 @@ pipeline {
 
         stage('Test') {
             steps {
-                step {
-                    sh 'mvn test'
-                }
+                sh 'mvn test'
             }
         }
 
         stage('Checkstyle Analysis') {
             steps {
-                step {
-                    sh 'mvn checkstyle:checkstyle'
-                }
+                sh 'mvn checkstyle:checkstyle'
             }
         }
 
