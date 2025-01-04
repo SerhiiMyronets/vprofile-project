@@ -6,23 +6,23 @@
   <servers>
     <server>
       <id>${SNAP_REPO}</id>
-      <username>${NEXUS_USER}</username>
-      <password>${NEXUS_PASS}</password>
+      <username>'admin'</username>
+      <password>'4iGD6EKGt4fV4WU'</password>
     </server>
     <server>
       <id>${RELEASE_REPO}</id>
-      <username>${NEXUS_USER}</username>
-      <password>${NEXUS_PASS}</password>
+      <username>'admin'</username>
+      <password>'4iGD6EKGt4fV4WU'</password>
     </server>
     <server>
       <id>${CENTRAL_REPO}</id>
-      <username>${NEXUS_USER}</username>
-      <password>${NEXUS_PASS}</password>
+      <username>'admin'</username>
+      <password>'4iGD6EKGt4fV4WU'</password>
     </server>
     <server>
       <id>${NEXUS_GRP_REPO}</id>
-      <username>${NEXUS_USER}</username>
-      <password>${NEXUS_PASS}</password>
+      <username>'admin'</username>
+      <password>'4iGD6EKGt4fV4WU'</password>
     </server>
   </servers>
 
