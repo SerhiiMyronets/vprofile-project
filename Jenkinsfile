@@ -8,21 +8,18 @@ pipeline {
     }
 
     environment {
-        SNAP_REPO = 'vprofile-snapshot'
-        NEXUS_USER = 'admin'
-        NEXUS_PASS = 'se64q7aXtCb6aA8'
-        RELEASE_REPO = 'vprofile-release'
-        CENTRALREPO = 'vpro-maven-central'
-        NEXUSIP = '172.31.31.136'
-        NEXUSPORT = '8081'
-        NEXUSGRP = 'vpro-maven-group'
-        NEXUS_LOGIN = 'nexus-login'
+        NEXUS_VERSION = "nexus3"
+        NEXUS_PROTOCOL = "http"
+        NEXUS_URL = "172.31.40.209:8081"
+        NEXUS_REPOSITORY = "vprofile-release"
+	    NEXUS_REPOGRP_ID    = "vprofile-grp-repo"
+        NEXUS_CREDENTIAL_ID = "nexus-login"
     }
 
     stages {
         stage('Build') {
             steps () {
-                sh 'mvn -s settings.xml -DskipTests -X install'
+                sh 'mvn -DskipTests install'
             }
         }
     }
