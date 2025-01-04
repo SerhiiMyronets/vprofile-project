@@ -210,8 +210,8 @@
     </build>
 	<repositories>
     <repository>
-      <id>${NEXUS-GRP}</id>
-      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP}/</url>
+      <id>${NEXUSGRP}</id>
+      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUSGRP}/</url>
     </repository>
   </repositories>
 </project>

@@ -20,7 +20,7 @@
       <password>${NEXUS-PASS}</password>
     </server>
     <server>
-        <id>${NEXUS-GRP}</id>
+        <id>${NEXUSGRP}</id>
       <username>${NEXUS-USER}</username>
       <password>${NEXUS-PASS}</password>
     </server>
@@ -30,7 +30,7 @@
     <mirror>
       <id>${CENTRALREPO}</id>
       <name>${CENTRALREPO}</name>
-      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP}/</url>
+      <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUSGRP}/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
