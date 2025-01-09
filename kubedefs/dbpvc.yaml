@@ -1,12 +1,13 @@
 apiVersion: v1
-kind: PersistentVolume
+kind: PersistentVolumeClaim
 metadata:
   name: db-pv-claim
   labels:
     app: vprodb
 spec:
-  capacity:
-    storage: 3Gi
+  resources:
+    requests:
+      storage: 3Gi
   accessModes:
     - ReadWriteOnce
   storageClassName: default
