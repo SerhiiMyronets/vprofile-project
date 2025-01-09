@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: vprodb
-          image: volkamana/vprofiledb
+          image: vprocontainers/vprofiledb
           ports:
             - name: vprodb-port
               containerPort: 3306
